@@ -32,22 +32,26 @@ export default function ContentCard({ result }: ContentCardProps) {
         <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-20 transition-all duration-200"></div>
       </div>
       
-      <div className="p-4">
+      <div className="p-4 flex flex-col h-32">
         <h3 className="font-semibold text-white text-sm mb-1 line-clamp-2 leading-tight">
           {result.trackName}
         </h3>
         
-        {result.artistName && (
-          <p className="text-gray-400 text-xs mb-2 line-clamp-1">
-            {result.artistName}
-          </p>
-        )}
+        <div className="flex-1 mb-2">
+          {result.artistName && (
+            <p className="text-gray-400 text-xs line-clamp-1">
+              {result.artistName}
+            </p>
+          )}
+        </div>
         
-        {result.primaryGenreName && (
-          <span className="inline-block px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">
-            {result.primaryGenreName}
-          </span>
-        )}
+        <div className="mt-auto">
+          {result.primaryGenreName && (
+            <span className="inline-block px-2 py-1 bg-gray-700 text-gray-300 text-xs rounded">
+              {result.primaryGenreName}
+            </span>
+          )}
+        </div>
       </div>
     </div>
   );
