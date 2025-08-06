@@ -72,7 +72,6 @@ The application integrates directly with the iTunes Search API:
 2. **Browse:** Results are organized into sections (Podcasts, Movies & TV, Others)
 3. **View Options:** Toggle between list and grid layouts for each section
 4. **Navigation:** Use the sidebar for future navigation features
-5. **Responsive:** Works seamlessly on desktop, tablet, and mobile devices
 
 ## Development
 
